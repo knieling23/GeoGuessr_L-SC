@@ -1,4 +1,9 @@
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+import tensorflow as tf
 from tensorflow.keras import layers, models
+
+print(tf.__version__)
 
 def build_cnn_model(input_shape=(500, 500, 3)):
     model = models.Sequential([
