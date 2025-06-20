@@ -12,7 +12,7 @@ print("Aktuelles Verzeichnis:", os.getcwd())
 print("Existiert coords.csv:", os.path.exists('dataset/coords.csv'))
 
 # >>> Testmodus aktivieren: True = nur kleiner Teil, False = alles
-TESTMODE = True
+TESTMODE = false
 TEST_SAMPLES = 100  # Anzahl der Beispiele im Testmodus
 
 # 1. Daten laden und splitten
